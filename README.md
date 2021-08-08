@@ -13,4 +13,4 @@
 - [ ] Chapter 11: Testing 
 
 ### August Schedule
-![August Schedule](file:///Users/chandyego84/Desktop/AugustCoding.png)
+![August Schedule](CTCIWeekly/AugustCoding.png)
