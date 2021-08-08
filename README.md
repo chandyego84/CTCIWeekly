@@ -11,3 +11,6 @@
 - [ ] Chapter 9: System Design and Scalability 
 - [~] Chapter 10: Searching and Sorting 
 - [ ] Chapter 11: Testing 
+
+### August Schedule
+![August Schedule](file:///Users/chandyego84/Desktop/AugustCoding.png)
