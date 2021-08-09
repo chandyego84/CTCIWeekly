@@ -1,4 +1,4 @@
-# Path to Summer '22
+# Path to Summer '22 (Thank you TNT)
 > "What we do each day is ultimately how we spend our life" (Duh...)
 ---
 ## Cracking the Coding Interview 
