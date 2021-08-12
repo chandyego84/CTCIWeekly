@@ -32,3 +32,4 @@ I have not taken a DSA course or class yet, but I have been teaching myself over
 | [IBM Hardware](https://www.ibm.com/us-en/employment/entrylevel/#jobs?%23jobs=&experience=Intern&job-category=Hardware%2520Development%2520%2526%2520Support) | Jan/Feb '22 | No | Pending |
 | [SEL](https://selinc.wd1.myworkdayjobs.com/SEL/1/refreshFacet/318c8bb6f553100021d223d9780d30be) | Ongoing | No | Pending |
 | [Boeing Mentorship Program](https://vcea.wsu.edu/student-success/mentorship-programs/#boeing) | Sep. 3 | Yes | Pending |
+| [Cosmic AES](https://www.cosmicaes.com/careers.html) | Ongoing | No | Pending |
