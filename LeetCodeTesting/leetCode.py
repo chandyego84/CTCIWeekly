@@ -50,12 +50,36 @@ class Solution:
         return reversed
 
 
-    def longestPalindrome(self, s: str) -> str:
+    def longestPalindrome(self, s):
         '''Given string s, return longest palindromic substring in s'''
         # can be done using Dynamic Programming
+        if (s == None or len(s) <= 1): return s
+
+        # two types of palindromes: "noon" vs "racecar"
+        longest = 0
+        start = 0
+        end = 0
+        for i in range(len(s)):
+            len1 = self.expandFromMid(s, i, i)
+            len2 = self.expandFromMid(s, i, i + 1)
+            longest = max(len1, len2)
+            if (longest > end - start):
+                start = i - ((longest - 1) // 2)
+                end = i + (longest // 2)
+        print(f"start: {start}")
+        print(f"end: {end}")
+        return s[start:end+1]
+
+    def expandFromMid(self, s:str, left:int, right:int) -> int:
+        # get length of current palindrome from middle to outwards
+        while (left >= 0 and right < len(s) and s[left] == s[right]):
+            left -= 1
+            right += 1
         
+        return right - left - 1
+
 
 
 
 solt = Solution()
-print(solt.lengthOfLongestSubstring(("tmmxyzta")))
+print(solt.longestPalindrome(("tmomxynoon")))
