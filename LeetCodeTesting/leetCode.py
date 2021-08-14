@@ -77,9 +77,31 @@ class Solution:
             right += 1
         
         return right - left - 1
+    
+    def searchInsert(self, nums, target):
+        '''Given a sorted array of distinct integers and a target value, 
+        return the index if the target is found. 
+        If not, return the index where it would be if it were inserted in order.'''
+        left = 0
+        right = len(nums) - 1
 
+        while (left <= right):
+            middle = (right + left) // 2
 
-
+            if (target == nums[middle] or 
+            (target < nums[middle] and (middle == 0 or target > nums[middle - 1] ))):
+                return middle
+            
+            elif (target > nums[middle] and (middle == len(nums) - 1 or target < nums[middle + 1] )):
+                return middle + 1
+            
+            elif (target < nums[middle]):
+                right = middle - 1
+            
+            elif (target > nums[middle]):
+                left = middle + 1
+        
+        return -1
 
 solt = Solution()
-print(solt.longestPalindrome(("tmomxynoon")))
+print(solt.searchInsert([1, 3, 5, 6], 8))
