@@ -102,6 +102,42 @@ class Solution:
                 left = middle + 1
         
         return -1
+    
+    def romanToInt(self, s:str) -> int:
+        '''
+        I can be placed before V (5) and X (10) to make 4 and 9. 
+        X can be placed before L (50) and C (100) to make 40 and 90. 
+        C can be placed before D (500) and M (1000) to make 400 and 900.
+        Given a roman numeral, convert it to an integer.
+        '''
+        converted = 0
+        left = 0
+        right = 1
+        romInts = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100,
+        "D": 500, "M": 1000}
+
+        if (len(s) == 1):
+            converted += romInts[s[0]]
+
+        while (right < len(s)):
+            if (romInts[s[left]] >= romInts[s[right]]):
+                # regular roman numeral calculations
+                converted += romInts[s[left]]
+                left += 1
+                right += 1
+                if (left == len(s) - 1):
+                    converted += romInts[s[left]]
+
+            elif (romInts[s[left]] < romInts[s[right]]):
+                # with subtraction
+                converted += (romInts[s[right]] - romInts[s[left]])
+                left += 2
+                right += 2
+                if (left == len(s) - 1):
+                    converted += romInts[s[left]]
+
+        return converted
+
 
 solt = Solution()
-print(solt.searchInsert([1, 3, 5, 6], 8))
+print(solt.romanToInt("I")) 
