@@ -15,8 +15,8 @@ def is_unique_chars(string):
 
 # make a list of booleans (initially False) where index corresponds to ASCII values
 # then iterate through each char and check if that ASVII value has already been seen in the string (True)
-
-def isUniqueChars(string):
+# Implementation 1: List of bools
+def isUniqueChars1(string):
     unique_bools = [False for i in range(256)]  # make a list of boolean values; ASCII values
     is_unique = True
 
@@ -30,6 +30,31 @@ def isUniqueChars(string):
             is_unique = False
     
     return is_unique
+
+# uniqueChar1Test = "chandler"
+# print(isUniqueChars1(uniqueChar1Test))
+
+# Implementation 2:
+# uses hash map, also keeps track of number of occurences for each character
+def isUniqueChars2(string):
+    uniqueChars = {} # hash table storing occurences of each char in string
+    isUnique = True
+
+    for c in string:
+        if c in uniqueChars:
+            # char already encountered
+            # increment occurences found
+            isUnique = False
+            uniqueChars[c] += 1
+
+        else:
+            # new char encountered
+            uniqueChars[c] = 1
+    
+    return isUnique
+
+# uniqueChar2Test = "audra"
+# print(isUniqueChars2(uniqueChar2Test))
 
 '''1.2: Check permutation: Given two strings, write a method to check if one is a permutation of the other'''
 def arePermutations(string1, string2):
@@ -79,8 +104,8 @@ def turnURL(spaceStr, trueLen):
     
     print(spaceStr)
 
-# test_str = "Geo  Hotz    "
-# turn_URL(list(test_str), 9) 
+test_str = "Geo  Hotz    "
+turnURL(list(test_str), 9) 
 
 '''1.4: Palindrome Permutation; Given a string, write a function to check if it is a permutation of a palindrome. The palindrome does not need to be limited
 to just dictionary words
