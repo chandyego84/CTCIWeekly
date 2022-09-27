@@ -1,5 +1,10 @@
 # Path to Summer '22 (Thank you TNT)
 > "What we do each day is ultimately how we spend our life" (Duh...)
+
+## Update (Post Summer '22)
+I actually forgot I created this repo after I did my Explore internship interview back in October '22. As of September 27, 2022, I am preparing again for my interview with Path AI for Spring '23, hence I'm here. Also, I just realized I need...  
+TODO: Create unit testing for all of my solutions.
+
 ---
 ## Cracking the Coding Interview 
 - [x] Chapter 1: Strings and Arrays 
@@ -18,8 +23,8 @@
 - Might actually range from 2-3 problems/day
 ![August Schedule](https://github.com/chandyego84/CTCIWeekly/blob/main/AugustCoding.png)
 
-## Microsoft
-Aiming for: Explore/SWE.
+## Microsoft (Summer '22)
+Aiming for: Explore.  
 I have not taken a DSA course or class yet, but I have been teaching myself over the summer/TNT program I was in. Not sure if I am confident enough for a SWE interview or internship, but I will continue to practice and learn like I am preparing for a SWE internship (refer to DSA/CTCI schedule above). 
 
 ## Summer '22
